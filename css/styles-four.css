@@ -1,0 +1,177 @@
+body {
+  color: black;
+  font-family: rubik;
+  background: white;
+  text-align: center;
+  margin: 0;
+  margin-block-end: 100px;
+}
+
+a {
+  color: purple;
+}
+
+header {
+  /* width: 188px; */
+  text-align: left;
+  margin-block-start: 25px;
+}
+
+header li {
+  line-height: 25px;
+}
+
+.header {
+}
+.header-content {
+  padding-inline: 25px;
+}
+.variants {
+  font-size:14px;
+  line-height:24px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-block-start: 64px;
+  margin-block-end:16px ;
+  font-weight: normal;
+}
+
+hr {
+  margin-top: 64px;
+}
+
+p {
+  color: rgba(84, 84, 84, 1);
+}
+
+blockquote {
+  margin-block-start: 64px;
+  margin-inline-end:63px;
+  font-size: 24px;
+  padding-left: 1px;
+  line-height: 24px;
+  border-left: 4px solid rgb(190, 116, 190);
+}
+
+pre {
+  border-radius: 8px;
+  border: 8px solid #5551ff;
+  box-shadow: -10px 10px 00 rgb(190, 116, 190);
+  position: static;
+  text-align: left;
+  padding: 40px;
+  font-family: "roboto";
+  line-height: 24px;
+  font-size: 20px;
+  margin: 50px;
+  overflow: auto;
+}
+
+.section-content {
+  counter-reset: titleList;
+  padding-inline: 0px;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+}
+
+.section-content h2 {
+  text-align: left;
+  margin-top: 64px;
+  font-size: 32px;
+  padding: 19px;
+}
+
+.section-content h3 {
+  font-size: 24px;
+  text-align:left;
+
+}
+
+.hero {
+  background: linear-gradient(274.51deg,rgba(74, 0, 224, 0.6) 5%,rgba(142, 45, 226, 0.5) 130.61%),url(/images/patron_morado.png);
+  background-size:cover,50px;
+  block-size:50px;
+}
+.main {
+}
+
+.wrapper {
+  margin: auto;
+  max-inline-size: 802px;
+}
+.main-content {
+  padding-inline: 20px;
+}
+
+.section-images img {
+  border-radius: 8px;
+  border: 8px solid rgb(190, 116, 190);
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content h3 + img {
+  border-radius: 8px;
+  border: 8px solid rgb(190, 116, 190);
+  margin-block-start: 40px;
+  max-inline-size: 100%;
+
+}
+.section-content img + h3{text-align: left;}
+
+.section-content nav {
+  text-align: left;
+}
+.section-content h2 + nav {
+  text-align: left;
+}
+.section-content p {
+  text-align: left;
+}
+
+.form input {
+  inline-size: 25%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-size: ;
+}
+.form input[type="text "]{
+  inline-size:20%;
+}
+
+.form input[type="submit"] {
+  background: blue;
+  color: white;
+  font-size:14px;}
+
+@media screen and (min-width:1366px){
+  .hero{block-size: 350px;}
+
+  header {
+    width: 188px;
+    text-align: left;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+  }
+  .form input[type="submit"] {
+    background: blue;
+    color: white;
+    margin-inline-start: -30px;
+    inline-size: 15%;
+  }
+  .form input[type="text"]{
+
+  }
+
+}

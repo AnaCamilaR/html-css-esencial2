@@ -1,0 +1,119 @@
+
+body{
+  background: #232946;
+  color:rgba(255, 255, 254, 1);
+  text-align: auto;
+  margin: 0;
+  margin-block-start: 40px;
+  margin-block-end: 200px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  line-height: 24px;
+}
+a {
+  color: rgba(184, 193, 236, 1);
+  text-decoration: none;}
+
+header{
+  margin-block-start: 25px;
+  font-family: nunito;
+}
+.header-content{padding-inline: 25px;}
+
+.variants {
+  font-size:14px;
+  line-height:24px;
+}
+
+hr{border: 1px solid rgba(97, 97, 97, 0.2);}
+
+h1{
+  font-size: 34px;
+  line-height:40px;
+  margin-block-end: 20px;
+}
+
+h2{
+  font-size: 40px;
+  line-height: 48px;}
+
+h3{font-size: 24px;}
+
+p{
+  font-family: nunito;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(184, 193, 236, 1);}
+
+blockquote{
+  margin-block-start: 64px;
+  font-size:24px;
+  line-height: 24px;
+  background: rgba(212, 147, 157, 1);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+blockquote p {
+  color :rgba(35, 41, 70, 1);
+  text-align: center;}
+
+pre {
+  font-size: 20px;
+  overflow: auto;}
+
+.section-images img{
+  display: block;
+  max-inline-size: 100%;
+}
+.section-content h3 +img{
+  max-inline-size: 100%;}
+
+.section-content  ol li, ul li{
+  font-family: nunito;
+  color:rgba(184, 193, 236, 1) ;
+}
+.section-content  h2{
+  font-size: 25px;
+  margin-inline: 20px;}
+
+.wrapper{
+  margin: auto;
+  max-inline-size:802px;}
+.main{}
+.main-content{padding-inline:20px;}
+
+.form input{
+  inline-size: 90%;
+  border: 1px solid rgba(238, 187, 195, 1);
+  background: #142b5a;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-inline: 16px ;
+  padding-block: 12px;
+  font-size: 16px;
+  display: block;
+  margin-block: 24px;
+  margin-inline-start:10px;
+  margin-inline-end: 10px;
+}
+.form ::-webkit-input-placeholder{ color:white; }
+
+.form input[type="submit"]{
+  background: rgba(238, 187, 195, 1);
+}
+
+@media screen and (min-width: 1366px) {
+  header{
+    width: 188px;
+    position: fixed;
+    inset-block-start: 50px;
+    inset-inline-start: 100px;
+  }
+
+  h1{
+    line-height: 70px;
+    font-size:60px}
+
+}
